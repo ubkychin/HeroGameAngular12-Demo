@@ -1,0 +1,15 @@
+div.characterDiv {
+  display: flex;
+}
+
+app-hero.selected {
+  transform: scale(1.1);
+  /* Scaling button to 0.98 to its original size */
+  box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
+}
+
+app-hero.disabled {
+  opacity: 0.5;
+  pointer-events: none;
+  touch-action: none;
+}

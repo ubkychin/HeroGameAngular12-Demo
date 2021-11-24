@@ -1,0 +1,44 @@
+<app-hero-view></app-hero-view>
+
+<hr>
+
+<div class="container">
+  <div class="row">
+  <h2>Hero Points Left: {{this.game.heroPointsPool}}</h2> 
+  </div>
+
+  <div class="form-group" #newCharacterInputs>
+    <div class="row">
+      <div class="col-3">
+        <label for="name">Name</label> 
+        <input #nameInput id="Name" class="form-control" />
+      </div>
+
+      <div class="col-2">
+        <label for="minDice">Dice min val</label> 
+        <input #minDiceInput id="minDice" class="form-control" type="number" />
+      </div>
+
+      <div class="col-2">
+        <label for="minDice">Dice max val</label> 
+        <input #maxDiceInput id="maxDice" class="form-control" type="number" />
+      </div>
+
+      <div class="col-2">
+        <label for="uses">Initial uses</label> 
+        <input #usesInput id="uses" class="form-control" type="number" />
+      </div>
+
+      <div class="col-1">
+        <label for="create-btn"></label>
+        <button class="btn-primary form-control" id="create-btn" (click)="createBtnClickHandler()">Create</button>
+      </div>
+    </div>
+    <div class="row">
+      <p> </p>
+      <button #StartGameBtn class="btn-primary" (click)="startGameBtnClickHandler()">Start Game</button>
+    </div>
+
+    
+  </div>
+</div>

@@ -1,0 +1,3 @@
+<div #villainDiv *ngIf="currentRound" class="characterDiv villainDiv">
+  <app-villain *ngFor="let villain of currentRound.villains; index as i" id="{{i}}" [villain]= "villain" (click)="villainClickHandler($event)"></app-villain>
+</div>

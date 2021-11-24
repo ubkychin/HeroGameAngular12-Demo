@@ -1,0 +1,5 @@
+<div #heroDiv class="characterDiv heroDiv">
+  <!-- <app-hero *ngFor="let hero of game.heroes" [hero]="hero" id="{{hero.id}}" (click)="heroClickHandler($event, hero.id)"></app-hero> -->
+  <app-hero *ngFor="let hero of game.heroes; index as i" [hero]="hero" id="{{i}}" (click)="heroClickHandler($event)">
+  </app-hero>
+</div>

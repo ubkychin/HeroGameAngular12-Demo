@@ -1,0 +1,11 @@
+<div #top class="top">
+  <button #newRoundBtn class="btn btn-primary" (click)="startRoundClickHandler()">Start Game</button>
+  <app-hero-view [selectedHero]="selectedHero" (selectedHeroChange)="selectedHeroChange($event)" [game]="game"></app-hero-view>
+  <hr>
+  <app-villain-view [currentRound]="currentRound" [selectedVillain]="selectedVillain" (selectedVillainChange)="selectedVillainChange($event)"></app-villain-view>
+  <hr>
+</div>
+
+<p *ngIf="selectedHero && selectedVillain">{{this.selectedHero.name}} attacks {{this.selectedVillain.name}}</p>
+<p #rollResult></p>
+<button class="btn btn-primary" (click)="useHeroClick()" [disabled]="useHeroDisabled">Roll</button>

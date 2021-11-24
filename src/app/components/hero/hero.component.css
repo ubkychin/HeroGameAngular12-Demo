@@ -1,0 +1,16 @@
+div {
+  margin: 10px 10px;
+  padding: 2px;
+  border: solid 1px;
+}
+
+.selected {
+  transform: scale(1.1);
+  /* Scaling button to 0.98 to its original size */
+  box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
+}
+
+.disabled {
+  opacity: 0.5;
+  pointer-events: none;
+}
